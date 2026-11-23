@@ -3,31 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>payMyGig — gigs, pagos y bandas para músicos</title>
-<meta name="description" content="payMyGig ayuda a músicos y managers a gestionar gigs, pagos y la operativa de sus bandas.">
+<title>payMyGig — Toca, cobra y sin perseguir a nadie</title>
+<meta name="description" content="Agenda de bolos, cobros del cliente y reparto entre músicos en un solo sitio. Para músicos y para quien lleva la banda.">
+<meta name="theme-color" content="#0B0C14">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home">
 <header><p>payMyGig</p>
-<nav aria-label="Principal"><a href="index.html">Inicio</a><a href="privacidad.html">Privacidad</a><a href="eliminar-cuenta.html">Eliminar cuenta</a></nav></header>
+<nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="privacidad.html">Privacidad</a><a href="eliminar-cuenta.html">Eliminar cuenta</a></nav></header>
 <main>
-<h1>payMyGig</h1>
-<section>
-<h2>Qué es</h2>
-<p>payMyGig es una aplicación para músicos y profesionales de la música que sirve para gestionar gigs, pagos y la operativa de sus bandas.</p>
-<p>Una misma persona puede pertenecer a varias bandas o gestionarlas, con un rol distinto en cada una (músico, manager o ambos).</p>
+<section class="stage hero">
+<div class="hero-copy">
+<h1>Toca. <span class="accent">Cobra.</span><br>Sin perseguir<br>a nadie.</h1>
+<p class="subline">La agenda de bolos, lo que ha pagado el cliente y lo que le toca a cada músico, en un solo sitio. Se acabaron los audios de «¿esto ya me lo pagaste?».</p>
+<p><a class="button" href="#para-quien">Cómo funciona</a></p>
+</div>
+<figure class="ticket" aria-label="Ejemplo de un bolo en payMyGig">
+<p class="small">Sáb 14 · 21:30</p>
+<p class="venue">Sala Riff, Madrid</p>
+<hr>
+<p class="row"><span>Caché acordado</span><span class="amount">1.200 €</span></p>
+<p class="row"><span>Cobrado del cliente</span><span class="amount"><span class="pill">Cobrado</span> 1.200 €</span></p>
+<p class="row"><span>Tu parte</span><span class="amount share">240 €</span></p>
+<p class="small">Confirmado por ti y por quien te paga.</p>
+</figure>
 </section>
-<section>
-<h2>Qué hace</h2>
-<ul>
-<li>Organiza los gigs de cada banda: fechas, lugares, horarios y puntos de encuentro.</li>
-<li>Lleva el control del dinero de cada gig: cachés, pagos, cobros y gastos.</li>
-<li>Permite importar gigs desde Google Calendar, solo en modo lectura (ver <a href="privacidad.html#google">datos de Google</a>).</li>
+<section id="para-quien" class="stage audiences">
+<div>
+<h2>Si tocas en una o en cinco bandas</h2>
+<ul class="checks">
+<li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Todos tus bolos, de todas tus bandas, en una sola agenda.</li>
+<li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Sabes cuánto te deben y quién lo tiene antes de subir al escenario.</li>
+<li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Confirmas cada pago con un toque y queda registrado para los dos.</li>
+<li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Ves tus cuentas del mes sin hacer ni una suma.</li>
 </ul>
-<p>Esta web es informativa; no es una página de acceso. La aplicación se usa desde el móvil.</p>
+</div>
+<div>
+<h2>Si llevas la banda o mueves los bolos</h2>
+<ul class="checks">
+<li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Creas el bolo una vez y toda la formación lo ve.</li>
+<li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Importas la agenda que ya tienes en Google Calendar, solo en modo lectura (ver <a href="privacidad.html#google">datos de Google</a>).</li>
+<li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Registras cada cobro del cliente y repartes sin hojas de cálculo.</li>
+<li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Te avisamos antes del bolo para cerrar el caché a tiempo.</li>
+</ul>
+</div>
 </section>
+<section class="stage band">
+<h2>Varias bandas, varios papeles, una sola cuenta.</h2>
+<p>Una misma persona puede pertenecer a varias bandas o gestionarlas, con un rol distinto en cada una. Tus cifras solo las ve quien debe verlas.</p>
+<p class="small">payMyGig se usa desde el móvil; esta web es informativa y no es una página de acceso.</p>
+</section>
+<div class="lower">
 <section>
 <h2>Privacidad y cuenta</h2>
+<p>payMyGig permite importar gigs desde Google Calendar, solo en modo lectura (ver <a href="privacidad.html#google">datos de Google</a>).</p>
 <ul>
 <li><a href="privacidad.html">Política de privacidad</a></li>
 <li><a href="eliminar-cuenta.html">Cómo eliminar tu cuenta</a></li>
@@ -38,6 +67,7 @@
 <p>The use of information received from Google Workspace APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 <p>En español: el uso que payMyGig hace de la información recibida de las APIs de Google Workspace cumple la Política de datos de usuario de los servicios de API de Google, incluidos los requisitos de uso limitado.</p>
 </section>
+</div>
 </main>
 <footer><p>payMyGig · <a href="privacidad.html">Política de privacidad</a> · <a href="eliminar-cuenta.html">Eliminar cuenta</a></p></footer>
 </body>
