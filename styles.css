@@ -34,12 +34,18 @@ nav a{color:var(--stage-muted);text-decoration:none;font-weight:600}
 nav a:hover,nav a[aria-current]{color:var(--stage-text)}
 nav a[aria-current]{text-decoration:underline;text-decoration-color:var(--stage-accent);text-decoration-thickness:2px}
 
-/* Readable pages (privacidad, eliminar-cuenta) and the lower part of the home page */
-main,.lower{max-width:46rem;margin:1.5rem auto;padding:0 1rem}
+/* Readable pages (privacidad, eliminar-cuenta) */
+main{max-width:46rem;margin:1.5rem auto;padding:0 1rem}
 section,.banner{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:1rem 1.25rem;margin-bottom:1.25rem}
 .banner{background:var(--warn-bg);color:var(--warn-text);border-color:transparent;font-weight:600}
 mark{background:var(--warn-bg);color:var(--warn-text);padding:0 .25rem;border-radius:4px}
-footer{max-width:46rem;margin:0 auto 2rem;padding:0 1rem;color:var(--muted);font-size:.9rem}
+footer.site{margin-top:3rem;background:var(--stage-bg);color:var(--stage-muted);border-top:1px solid var(--stage-border);padding:2rem max(clamp(1rem,4vw,3.5rem),calc((100% - 72rem)/2)) 2.5rem;display:grid;gap:1.25rem;font-size:.9rem;--ring:var(--stage-accent)}
+.home footer.site{margin-top:0}
+.foot-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem}
+.foot-top .wordmark{margin:0;font:800 1.5rem/1 var(--display);letter-spacing:.01em;color:var(--stage-text)}
+.foot-top nav{margin:0}
+footer.site .legal{margin:0;max-width:60rem;font-size:.8rem;line-height:1.55}
+footer.site .legal a{color:var(--stage-accent)}
 
 /* Home: full-bleed night stage */
 .home header{border-bottom-color:transparent}
@@ -85,7 +91,6 @@ footer{max-width:46rem;margin:0 auto 2rem;padding:0 1rem;color:var(--muted);font
 .band h2{font:800 clamp(1.75rem,4vw,2.5rem)/1.05 var(--display);text-transform:uppercase;max-width:40rem}
 .band p{max-width:40rem;color:var(--stage-muted)}
 .band p.small{margin-top:1.25rem}
-.lower{margin-top:2.5rem}
 
 @media(min-width:60rem){
   .hero{grid-template-columns:minmax(0,1fr) auto;min-height:82vh}
