@@ -9,7 +9,7 @@
 </head>
 <body>
 <header><p>payMyGig</p>
-<nav aria-label="Principal"><a href="index.html">Inicio</a><a href="privacidad.html" aria-current="page">Privacidad</a><a href="eliminar-cuenta.html">Eliminar cuenta</a></nav></header>
+<nav aria-label="Principal"><a href="index.html">Inicio</a><a href="privacidad.html" aria-current="page">Privacidad</a></nav></header>
 <main>
 <h1>Política de privacidad</h1>
 <p class="banner" role="note">Borrador pendiente de revisión legal</p>
@@ -30,6 +30,7 @@
 <li>Dinero: cachés, pagos, cobros, custodias, retenciones y gastos.</li>
 <li>Ubicación de movimientos, si se usa esa función.</li>
 <li>Avisos y tokens de notificación push.</li>
+<li>Lista de espera: correo, fecha de inscripción y resumen cifrado de la IP (ver <a href="#lista-espera">Lista de espera</a>).</li>
 <li id="google"><strong>Google Calendar</strong> (solo si lo conectas): la lista de tus calendarios, para que elijas uno; de ese calendario, los eventos (título, descripción, lugar y horas) para crear gigs; y un token de actualización guardado cifrado. Los permisos solicitados son de solo lectura: <code>calendar.calendarlist.readonly</code> y <code>calendar.events.readonly</code>. payMyGig no crea, edita ni borra eventos.</li>
 </ul>
 </section>
@@ -51,7 +52,7 @@
 <h2>5. Encargados del tratamiento</h2>
 <ul>
 <li>Supabase: base de datos, autenticación y funciones; región UE (eu-west).</li>
-<li>Resend: envío de correos de cuenta.</li>
+<li>Resend: envío de correos de cuenta y de la lista de espera.</li>
 <li>Google: API de Calendar, solo si conectas tu calendario.</li>
 <li>GitHub Pages: aloja esta web; no recibe datos de la app.</li>
 <li>Notificaciones push y geolocalización: <mark>[POR CONFIRMAR: proveedores usados en producción (Expo, Geoapify)]</mark></li>
@@ -66,7 +67,7 @@
 
 <section id="eliminacion">
 <h2>7. Eliminación de cuenta y desconexión de Google</h2>
-<p>Puedes pedir la eliminación de tu cuenta siguiendo los pasos de <a href="eliminar-cuenta.html">Eliminar cuenta</a>. Plazo de respuesta: <mark>[POR CONFIRMAR: plazo]</mark></p>
+<p>Puedes pedir la eliminación de tu cuenta siguiendo los pasos de . Plazo de respuesta: <mark>[POR CONFIRMAR: plazo]</mark></p>
 <p>Qué se conserva: ver el apartado 6. Para desconectar Google Calendar, hazlo desde la app o en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 </section>
 
@@ -85,11 +86,16 @@
 <p>Edad mínima de uso: 18 años. El servicio es solo para personas mayores de 18 años; las cuentas de menores se eliminarán cuando se detecten.</p>
 </section>
 
+<section id="lista-espera">
+<h2>11. Lista de espera</h2>
+<p>Si te apuntas a la lista de espera guardamos tu correo electrónico, la fecha de inscripción y un resumen cifrado e irreversible de tu dirección IP para frenar abusos. Lo usamos solo para avisarte cuando haya una plaza en la beta y para enviarte el correo de confirmación, a través de nuestro proveedor de correo Resend. Lo conservamos hasta que te demos acceso o nos pidas borrarlo escribiendo a soporte@paymygig.es.</p>
+</section>
+
 <section>
-<h2>11. Cambios</h2>
+<h2>12. Cambios</h2>
 <p>Publicaremos aquí cualquier cambio, con su fecha de última actualización.</p>
 </section>
 </main>
-<footer><p>payMyGig · <a href="privacidad.html">Política de privacidad</a> · <a href="eliminar-cuenta.html">Eliminar cuenta</a></p></footer>
+<footer><p>payMyGig · <a href="privacidad.html">Política de privacidad</a></p></footer>
 </body>
 </html>

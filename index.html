@@ -10,13 +10,24 @@
 </head>
 <body class="home">
 <header><p>payMyGig</p>
-<nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="privacidad.html">Privacidad</a><a href="eliminar-cuenta.html">Eliminar cuenta</a></nav></header>
+<nav aria-label="Principal"><a href="index.html" aria-current="page">Inicio</a><a href="privacidad.html">Privacidad</a></nav></header>
 <main>
 <section class="stage hero">
 <div class="hero-copy">
 <h1>Toca. <span class="accent">Cobra.</span><br>Sin perseguir<br>a nadie.</h1>
 <p class="subline">La agenda de bolos, lo que ha pagado el cliente y lo que le toca a cada músico, en un solo sitio. Se acabaron los audios de «¿esto ya me lo pagaste?».</p>
-<p><a class="button" href="#para-quien">Cómo funciona</a></p>
+<p class="badge">Beta privada · acceso por invitación</p>
+<div id="lista" class="waitlist">
+<form action="https://cmfkecnwxsofpkffnccp.supabase.co/functions/v1/waitlist-signup" method="post">
+<label for="email">Tu correo</label>
+<div class="field">
+<input id="email" type="email" name="email" required autocomplete="email" maxlength="254" placeholder="tu@email.com">
+<button class="button" type="submit">Apuntarme a la lista de espera</button>
+</div>
+<div class="hp" aria-hidden="true"><label>Web <input name="website" tabindex="-1" autocomplete="off"></label></div>
+</form>
+<p class="small">Te avisaremos por correo cuando tengamos una plaza para ti. Solo usamos tu email para esto (ver <a href="privacidad.html#lista-espera">privacidad</a>). <a href="#para-quien">Cómo funciona</a></p>
+</div>
 </div>
 <figure class="ticket" aria-label="Ejemplo de un bolo en payMyGig">
 <p class="small">Sáb 14 · 21:30</p>
@@ -51,15 +62,14 @@
 <section class="stage band">
 <h2>Varias bandas, varios papeles, una sola cuenta.</h2>
 <p>Una misma persona puede pertenecer a varias bandas o gestionarlas, con un rol distinto en cada una. Tus cifras solo las ve quien debe verlas.</p>
-<p class="small">payMyGig se usa desde el móvil; esta web es informativa y no es una página de acceso.</p>
+<p class="small">payMyGig está en beta privada: el acceso es por invitación y la app se usa desde el móvil. Esta web no es una página de acceso.</p>
 </section>
 <div class="lower">
 <section>
-<h2>Privacidad y cuenta</h2>
+<h2>Privacidad</h2>
 <p>payMyGig permite importar gigs desde Google Calendar, solo en modo lectura (ver <a href="privacidad.html#google">datos de Google</a>).</p>
 <ul>
 <li><a href="privacidad.html">Política de privacidad</a></li>
-<li><a href="eliminar-cuenta.html">Cómo eliminar tu cuenta</a></li>
 </ul>
 </section>
 <section id="limited-use">
@@ -69,6 +79,6 @@
 </section>
 </div>
 </main>
-<footer><p>payMyGig · <a href="privacidad.html">Política de privacidad</a> · <a href="eliminar-cuenta.html">Eliminar cuenta</a></p></footer>
+<footer><p>payMyGig · <a href="privacidad.html">Política de privacidad</a></p></footer>
 </body>
 </html>
